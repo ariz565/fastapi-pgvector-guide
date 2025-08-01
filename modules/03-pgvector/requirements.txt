@@ -1,33 +1,44 @@
-# PostgreSQL + pgvector Requirements
-# Install these packages for the semantic search project
+# Python Dependencies for Clean Function-Based Semantic Search
+# Optimized for PostgreSQL 17 + pgvector with modular architecture
 
-# Database connectivity
-psycopg2-binary>=2.9.0     # PostgreSQL adapter for Python
-sqlalchemy>=2.0.0          # SQL toolkit and ORM (optional, for advanced use)
+# Core web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
 
-# Web framework
-fastapi>=0.104.0           # Modern Python web framework
-uvicorn[standard]>=0.24.0  # ASGI server for FastAPI
-pydantic>=2.4.0            # Data validation using Python type annotations
+# Database and vector operations
+psycopg2-binary==2.9.7
+pgvector==0.2.4
 
-# Embedding and ML
-sentence-transformers>=2.2.0  # Pre-trained sentence embeddings
-numpy>=1.26.0                 # Numerical computing
-scikit-learn>=1.3.0          # Machine learning library (fallback embeddings)
+# Machine learning and embeddings (optional - fallback to TF-IDF if not available)
+sentence-transformers==2.2.2
+torch==2.1.0
+transformers==4.35.0
 
-# Utilities
-python-multipart>=0.0.6   # Form data parsing
-python-dotenv>=1.0.0      # Environment variable management
+# Scientific computing
+numpy>=1.26.0
+scikit-learn==1.3.2
 
-# Optional: For production
-gunicorn>=21.0.0          # Production WSGI server
-redis>=5.0.0              # Caching (if needed)
+# Data validation and serialization
+pydantic==2.5.0
 
-# Optional: For monitoring
-prometheus-client>=0.18.0  # Metrics collection
-structlog>=23.0.0         # Structured logging
+# HTTP client and utilities
+httpx==0.25.2
+python-multipart==0.0.6
 
-# Development dependencies (optional)
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+requests==2.31.0
+
+# Production utilities
+python-dotenv==1.0.0
+rich==13.7.0
+
+# Optional: Analysis and visualization
+jupyter==1.0.0
+matplotlib==3.8.2
+seaborn==0.13.0
+pandas==2.1.4
 pytest>=7.4.0             # Testing framework
 pytest-asyncio>=0.21.0    # Async testing support
 httpx>=0.25.0             # HTTP client for testing APIs
