@@ -1,0 +1,28 @@
+# Requirements for Semantic Document Search Project
+# Install these packages to run the application
+
+# Core web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Machine learning and embeddings
+sentence-transformers>=2.2.2
+numpy>=1.26.0
+scikit-learn>=1.3.0
+
+# Database (PostgreSQL with vector support)
+psycopg2-binary>=2.9.7
+asyncpg>=0.29.0
+
+# File processing (optional, for future PDF/DOCX support)
+# PyPDF2>=3.0.1
+# python-docx>=0.8.11
+
+# Utilities
+python-dotenv>=1.0.0
+pathlib
+
+# Development and testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1

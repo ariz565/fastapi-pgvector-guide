@@ -1,6 +1,8 @@
-# Project 1: Semantic Document Search Engine
+# 🔍 Semantic Document Search Engine
 
-Build a production-ready semantic search engine that combines multiple vector database technologies. This project demonstrates real-world application of everything you've learned!
+A beginner-friendly semantic search engine that finds documents by meaning, not just keywords. Built with Python, FastAPI, PostgreSQL, and pgvector.
+
+**Note: This is a simplified, educational implementation focusing on clean, understandable code for learning purposes.**
 
 ## 🎯 Project Overview
 
